@@ -11,10 +11,10 @@ public class Tag2 {
 		int p = 0;
 		int paper = 0;
 		int finalPaper = 0;
-		String data = "0";
-		String newData = "0";
+		String data;
+		String newData;
 
-		File myFile = new File("paper.txt");
+		File myFile = new File("Tag2Input.txt");
 		FileWriter Paper = new FileWriter("newPaper.txt");
 		File myPaper = new File("newPaper.txt");
 		Scanner sc = new Scanner(myFile);
@@ -31,8 +31,11 @@ public class Tag2 {
 		Scanner scan = new Scanner(myPaper);
 		for (int a = 0; a < p; a++) {
 			int l = scan.nextInt();
+//			System.out.println(l);
 			int w = scan.nextInt();
+//			System.out.println("w" + w);
 			int h = scan.nextInt();
+//			System.out.println("h" + h);
 
 			paper = (2 * l * w) + (2 * w * h) + (2 * h * l);
 			if ((l * w) < (w * h) && (l * w) < (h * l)) {

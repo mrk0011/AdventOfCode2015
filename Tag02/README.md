@@ -15,10 +15,10 @@ public class Tag2 {
 		int p = 0;
 		int paper = 0;
 		int finalPaper = 0;
-		String data = "0";
-		String newData = "0";
+		String data;
+		String newData;
 
-		File myFile = new File("paper.txt");
+		File myFile = new File("Tag2Input.txt");
 		FileWriter Paper = new FileWriter("newPaper.txt");
 		File myPaper = new File("newPaper.txt");
 		Scanner sc = new Scanner(myFile);
@@ -58,21 +58,20 @@ public class Tag2 {
 
 ## Input
 ```
-29x13x26
-11x11x14
-27x2x5
-6x10x13
-15x19x10
-26x29x15
-8x23x6
-17x8x26
-20x28x3
-23x12x24
+4x23x21
+22x29x19
+11x4x11
+8x10x5
+24x18x16
+11x25x22
+2x13x20
+24x15x14
+14x22x2
+30x7x3
 ...
 ```
 
 ## Output
 ```
-The elves should order 1586300 square feet of wrapping paper!
-
+The elves should order 1598415 square feet of wrapping paper!
 ```
