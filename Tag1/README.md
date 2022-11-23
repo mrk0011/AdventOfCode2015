@@ -1,7 +1,7 @@
 # Day 1
-### [Task] (https://adventofcode.com/2015/day/1)
+### [Task](https://adventofcode.com/2015/day/1)
 ## Code
-```
+```java
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
