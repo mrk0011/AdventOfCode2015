@@ -21,7 +21,7 @@ public class Tag1 {
 				zähler = zähler - 1;
 
 		}
-		System.out.println("Santa needs to take his presents to floor " + zähler);
+		System.out.println("Santa needs to take his presents to floor " + zähler + "!");
 
 		sc.close();
 	}
