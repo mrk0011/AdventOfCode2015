@@ -14,7 +14,7 @@ public class Tag2 {
 		String data;
 		String newData;
 
-		File myFile = new File("Tag2Input.txt");
+		File myFile = new File("input.txt");
 		FileWriter Paper = new FileWriter("newPaper.txt");
 		File myPaper = new File("newPaper.txt");
 		Scanner sc = new Scanner(myFile);
@@ -31,11 +31,8 @@ public class Tag2 {
 		Scanner scan = new Scanner(myPaper);
 		for (int a = 0; a < p; a++) {
 			int l = scan.nextInt();
-//			System.out.println(l);
 			int w = scan.nextInt();
-//			System.out.println("w" + w);
 			int h = scan.nextInt();
-//			System.out.println("h" + h);
 
 			paper = (2 * l * w) + (2 * w * h) + (2 * h * l);
 			if ((l * w) < (w * h) && (l * w) < (h * l)) {
@@ -48,8 +45,11 @@ public class Tag2 {
 			finalPaper = finalPaper + paper;
 		}
 
-		System.out.println("The elves should order " + finalPaper + " square feet of wrapping paper!");
+		FileWriter myWriter = new FileWriter(new File("output.txt"));
+		myWriter.write("" + finalPaper);
+
 		sc.close();
 		scan.close();
+		myWriter.close();
 	}
 }
