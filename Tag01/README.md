@@ -1,5 +1,5 @@
-# Day 1
-### [Task](https://adventofcode.com/2015/day/1)
+# Day 3
+### [Task](https://adventofcode.com/2015/day/3)
 ## Code
 ```java
 import java.io.File;
